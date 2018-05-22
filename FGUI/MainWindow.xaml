@@ -1,0 +1,24 @@
+﻿<Window x:Class="FGUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FGUI"
+        mc:Ignorable="d"
+        Title="FGUI" 
+        Height="500" 
+        WindowStartupLocation="CenterOwner"
+        Width="800"
+        MinHeight="500"
+        MaxHeight="500"
+        >
+    <Grid>
+        <StackPanel x:Name="nav" Height="50" HorizontalAlignment="Stretch" VerticalAlignment="Top" Orientation="Horizontal" Background="Black">
+            <StackPanel.Effect>
+                <BlurEffect Radius="0.5" KernelType="Gaussian" RenderingBias="Performance"/>
+            </StackPanel.Effect>
+        </StackPanel>
+        <TabControl x:Name="book" Height="420" VerticalAlignment="Bottom" >
+        </TabControl>
+    </Grid>
+</Window>
